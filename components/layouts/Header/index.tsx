@@ -4,14 +4,14 @@ import Section from "../Section"
 
 const Header = () => {
     return (
-        <Section
-            tag="header"
-            className="h-16 flex justify-between align-middle"
-            full
-            dark
-        >
-            <Logo />
-            <Menu />
+        <Section tag="header" full dark noPadding>
+            <Section
+                tag="div"
+                className="h-16 flex justify-between align-middle"
+            >
+                <Logo />
+                <Menu />
+            </Section>
         </Section>
     )
 }

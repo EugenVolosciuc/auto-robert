@@ -13,7 +13,7 @@ type Props = {
 }
 
 const baseClassName =
-    "rounded-md font-semibold focus:outline-none focus:ring transition text-white"
+    "rounded-md tracking-wide font-semibold focus:outline-none focus:ring transition text-white"
 
 const Button: FC<Props> = forwardRef(
     (
@@ -54,11 +54,11 @@ const Button: FC<Props> = forwardRef(
 
             switch (type) {
                 case "default":
-                    return `text-${color}-600 border-${color}-600 hover:text-white hover:bg-${color}-600 active:bg-${color}-700 focus:ring-${color}-300`
+                    return `text-${color}-600 border-${color}-600 hover:text-${color} hover:bg-${color}-600 active:bg-${color}-700 focus:ring-${color}-300`
                 case "link":
                     return `text-${color}-600 hover:bg-${color}-50 active:bg-${color}-100 focus:ring-${color}-300`
                 case "primary":
-                    return `bg-${color}-500 hover:bg-${color}-600 active:bg-${color}-700 focus:ring-${color}-300`
+                    return `text-white bg-${color}-500 hover:bg-${color}-600 active:bg-${color}-700 focus:ring-${color}-300`
                 default:
                     throw new Error("Type must be default, primary or link")
             }

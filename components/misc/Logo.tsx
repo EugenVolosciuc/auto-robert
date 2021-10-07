@@ -14,7 +14,7 @@ const Logo = () => {
                     layout="fixed"
                     alt="Logo"
                 />
-                <p className="ml-2 font-black text-white text-xl tracking-wide">
+                <p className="ml-2 font-black text-white text-2xl tracking-wide">
                     Auto Robert
                 </p>
             </a>
