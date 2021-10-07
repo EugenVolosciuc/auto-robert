@@ -2,8 +2,8 @@ import type { NextPage } from "next"
 
 import MainLayout from "components/layouts/MainLayout"
 
-const Home: NextPage = () => {
+const Gallery: NextPage = () => {
     return <MainLayout></MainLayout>
 }
 
-export default Home
+export default Gallery
